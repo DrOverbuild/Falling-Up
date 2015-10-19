@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4B847D21BBEE5E900534975 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847D11BBEE5E900534975 /* AppDelegate.swift */; };
+		A4B847D61BBEE5E900534975 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847D51BBEE5E900534975 /* GameScene.swift */; };
+		A4B847D81BBEE5E900534975 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847D71BBEE5E900534975 /* GameViewController.swift */; };
+		A4B847DB1BBEE5EA00534975 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B847D91BBEE5EA00534975 /* Main.storyboard */; };
+		A4B847DD1BBEE5EA00534975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B847DC1BBEE5EA00534975 /* Assets.xcassets */; };
+		A4B847E01BBEE5EA00534975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B847DE1BBEE5EA00534975 /* LaunchScreen.storyboard */; };
+		A4B847EB1BBEE5EA00534975 /* Falling_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847EA1BBEE5EA00534975 /* Falling_UpUITests.swift */; };
+		A4B847F91BBEE7DB00534975 /* GameMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847F51BBEE7DB00534975 /* GameMenuScene.swift */; settings = {ASSET_TAGS = (); }; };
+		A4B847FA1BBEE7DB00534975 /* InGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847F61BBEE7DB00534975 /* InGameScene.swift */; settings = {ASSET_TAGS = (); }; };
+		A4B847FC1BBEE7DB00534975 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847F81BBEE7DB00534975 /* Util.swift */; settings = {ASSET_TAGS = (); }; };
+		A4B847FE1BBEEC5900534975 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B847FD1BBEEC5900534975 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		A4C344E81BC32FCB0048F3D2 /* score2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4C344E51BC32FCB0048F3D2 /* score2.wav */; settings = {ASSET_TAGS = (); }; };
+		A4C344E91BC32FCB0048F3D2 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4C344E61BC32FCB0048F3D2 /* death.wav */; settings = {ASSET_TAGS = (); }; };
+		A4C344EA1BC32FCB0048F3D2 /* buttonPress.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4C344E71BC32FCB0048F3D2 /* buttonPress.wav */; settings = {ASSET_TAGS = (); }; };
+		A4C344EC1BC377E50048F3D2 /* score.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4C344EB1BC377E50048F3D2 /* score.wav */; settings = {ASSET_TAGS = (); }; };
+		A4C344EE1BC379450048F3D2 /* Contemplation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C344ED1BC379450048F3D2 /* Contemplation.mp3 */; settings = {ASSET_TAGS = (); }; };
+		A4C344F01BC4AB360048F3D2 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C344EF1BC4AB360048F3D2 /* music.mp3 */; settings = {ASSET_TAGS = (); }; };
+		A4C344F21BC596410048F3D2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4C344F11BC596400048F3D2 /* Settings.bundle */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4B847E71BBEE5EA00534975 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4B847C61BBEE5E900534975 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4B847CD1BBEE5E900534975;
+			remoteInfo = "Falling Up";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4B847CE1BBEE5E900534975 /* Falling Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Falling Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B847D11BBEE5E900534975 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4B847D51BBEE5E900534975 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		A4B847D71BBEE5E900534975 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A4B847DA1BBEE5EA00534975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4B847DC1BBEE5EA00534975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4B847DF1BBEE5EA00534975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4B847E11BBEE5EA00534975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B847E61BBEE5EA00534975 /* Falling UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Falling UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B847EA1BBEE5EA00534975 /* Falling_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Falling_UpUITests.swift; sourceTree = "<group>"; };
+		A4B847EC1BBEE5EA00534975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B847F51BBEE7DB00534975 /* GameMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameMenuScene.swift; sourceTree = "<group>"; };
+		A4B847F61BBEE7DB00534975 /* InGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InGameScene.swift; sourceTree = "<group>"; };
+		A4B847F81BBEE7DB00534975 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		A4B847FD1BBEEC5900534975 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A4C344E51BC32FCB0048F3D2 /* score2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score2.wav; sourceTree = "<group>"; };
+		A4C344E61BC32FCB0048F3D2 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
+		A4C344E71BC32FCB0048F3D2 /* buttonPress.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buttonPress.wav; sourceTree = "<group>"; };
+		A4C344EB1BC377E50048F3D2 /* score.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score.wav; sourceTree = "<group>"; };
+		A4C344ED1BC379450048F3D2 /* Contemplation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Contemplation.mp3; sourceTree = "<group>"; };
+		A4C344EF1BC4AB360048F3D2 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		A4C344F11BC596400048F3D2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4B847CB1BBEE5E900534975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B847E31BBEE5EA00534975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4B847C51BBEE5E900534975 = {
+			isa = PBXGroup;
+			children = (
+				A4B847D01BBEE5E900534975 /* Falling Up */,
+				A4B847E91BBEE5EA00534975 /* Falling UpUITests */,
+				A4B847CF1BBEE5E900534975 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4B847CF1BBEE5E900534975 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4B847CE1BBEE5E900534975 /* Falling Up.app */,
+				A4B847E61BBEE5EA00534975 /* Falling UpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4B847D01BBEE5E900534975 /* Falling Up */ = {
+			isa = PBXGroup;
+			children = (
+				A4C344E41BC32FB40048F3D2 /* Sounds */,
+				A4B847F51BBEE7DB00534975 /* GameMenuScene.swift */,
+				A4B847F61BBEE7DB00534975 /* InGameScene.swift */,
+				A4B847F81BBEE7DB00534975 /* Util.swift */,
+				A4B847D11BBEE5E900534975 /* AppDelegate.swift */,
+				A4B847D51BBEE5E900534975 /* GameScene.swift */,
+				A4B847D71BBEE5E900534975 /* GameViewController.swift */,
+				A4B847D91BBEE5EA00534975 /* Main.storyboard */,
+				A4B847FD1BBEEC5900534975 /* Images.xcassets */,
+				A4B847DC1BBEE5EA00534975 /* Assets.xcassets */,
+				A4B847DE1BBEE5EA00534975 /* LaunchScreen.storyboard */,
+				A4B847E11BBEE5EA00534975 /* Info.plist */,
+				A4C344F11BC596400048F3D2 /* Settings.bundle */,
+			);
+			path = "Falling Up";
+			sourceTree = "<group>";
+		};
+		A4B847E91BBEE5EA00534975 /* Falling UpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A4B847EA1BBEE5EA00534975 /* Falling_UpUITests.swift */,
+				A4B847EC1BBEE5EA00534975 /* Info.plist */,
+			);
+			path = "Falling UpUITests";
+			sourceTree = "<group>";
+		};
+		A4C344E41BC32FB40048F3D2 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A4C344E51BC32FCB0048F3D2 /* score2.wav */,
+				A4C344E61BC32FCB0048F3D2 /* death.wav */,
+				A4C344E71BC32FCB0048F3D2 /* buttonPress.wav */,
+				A4C344EB1BC377E50048F3D2 /* score.wav */,
+				A4C344ED1BC379450048F3D2 /* Contemplation.mp3 */,
+				A4C344EF1BC4AB360048F3D2 /* music.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4B847CD1BBEE5E900534975 /* Falling Up */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4B847EF1BBEE5EA00534975 /* Build configuration list for PBXNativeTarget "Falling Up" */;
+			buildPhases = (
+				A4B847CA1BBEE5E900534975 /* Sources */,
+				A4B847CB1BBEE5E900534975 /* Frameworks */,
+				A4B847CC1BBEE5E900534975 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Falling Up";
+			productName = "Falling Up";
+			productReference = A4B847CE1BBEE5E900534975 /* Falling Up.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4B847E51BBEE5EA00534975 /* Falling UpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4B847F21BBEE5EA00534975 /* Build configuration list for PBXNativeTarget "Falling UpUITests" */;
+			buildPhases = (
+				A4B847E21BBEE5EA00534975 /* Sources */,
+				A4B847E31BBEE5EA00534975 /* Frameworks */,
+				A4B847E41BBEE5EA00534975 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4B847E81BBEE5EA00534975 /* PBXTargetDependency */,
+			);
+			name = "Falling UpUITests";
+			productName = "Falling UpUITests";
+			productReference = A4B847E61BBEE5EA00534975 /* Falling UpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4B847C61BBEE5E900534975 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jasper Reddin";
+				TargetAttributes = {
+					A4B847CD1BBEE5E900534975 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = WJN3EALGRX;
+					};
+					A4B847E51BBEE5EA00534975 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = WJN3EALGRX;
+						TestTargetID = A4B847CD1BBEE5E900534975;
+					};
+				};
+			};
+			buildConfigurationList = A4B847C91BBEE5E900534975 /* Build configuration list for PBXProject "Falling Up" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4B847C51BBEE5E900534975;
+			productRefGroup = A4B847CF1BBEE5E900534975 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4B847CD1BBEE5E900534975 /* Falling Up */,
+				A4B847E51BBEE5EA00534975 /* Falling UpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4B847CC1BBEE5E900534975 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C344EE1BC379450048F3D2 /* Contemplation.mp3 in Resources */,
+				A4C344E81BC32FCB0048F3D2 /* score2.wav in Resources */,
+				A4C344EC1BC377E50048F3D2 /* score.wav in Resources */,
+				A4C344E91BC32FCB0048F3D2 /* death.wav in Resources */,
+				A4C344F01BC4AB360048F3D2 /* music.mp3 in Resources */,
+				A4B847FE1BBEEC5900534975 /* Images.xcassets in Resources */,
+				A4B847E01BBEE5EA00534975 /* LaunchScreen.storyboard in Resources */,
+				A4B847DD1BBEE5EA00534975 /* Assets.xcassets in Resources */,
+				A4C344EA1BC32FCB0048F3D2 /* buttonPress.wav in Resources */,
+				A4C344F21BC596410048F3D2 /* Settings.bundle in Resources */,
+				A4B847DB1BBEE5EA00534975 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B847E41BBEE5EA00534975 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4B847CA1BBEE5E900534975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B847D61BBEE5E900534975 /* GameScene.swift in Sources */,
+				A4B847FA1BBEE7DB00534975 /* InGameScene.swift in Sources */,
+				A4B847D81BBEE5E900534975 /* GameViewController.swift in Sources */,
+				A4B847FC1BBEE7DB00534975 /* Util.swift in Sources */,
+				A4B847D21BBEE5E900534975 /* AppDelegate.swift in Sources */,
+				A4B847F91BBEE7DB00534975 /* GameMenuScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B847E21BBEE5EA00534975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B847EB1BBEE5EA00534975 /* Falling_UpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4B847E81BBEE5EA00534975 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4B847CD1BBEE5E900534975 /* Falling Up */;
+			targetProxy = A4B847E71BBEE5EA00534975 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4B847D91BBEE5EA00534975 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4B847DA1BBEE5EA00534975 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4B847DE1BBEE5EA00534975 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4B847DF1BBEE5EA00534975 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4B847ED1BBEE5EA00534975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4B847EE1BBEE5EA00534975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4B847F01BBEE5EA00534975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Falling Up/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasper.Falling-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4B847F11BBEE5EA00534975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Falling Up/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasper.Falling-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4B847F31BBEE5EA00534975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Falling UpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasper.Falling-UpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Falling Up";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A4B847F41BBEE5EA00534975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Falling UpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasper.Falling-UpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Falling Up";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4B847C91BBEE5E900534975 /* Build configuration list for PBXProject "Falling Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B847ED1BBEE5EA00534975 /* Debug */,
+				A4B847EE1BBEE5EA00534975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4B847EF1BBEE5EA00534975 /* Build configuration list for PBXNativeTarget "Falling Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B847F01BBEE5EA00534975 /* Debug */,
+				A4B847F11BBEE5EA00534975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4B847F21BBEE5EA00534975 /* Build configuration list for PBXNativeTarget "Falling UpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B847F31BBEE5EA00534975 /* Debug */,
+				A4B847F41BBEE5EA00534975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4B847C61BBEE5E900534975 /* Project object */;
+}
