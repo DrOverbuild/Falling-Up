@@ -19,6 +19,8 @@ class GameViewController: UIViewController {
 			try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
 		}catch{}
 		
+		
+		
 		let music = NSUserDefaults.standardUserDefaults().boolForKey("music_preference")
 		if music {
 			playBackgroundMusic("music.mp3")
@@ -29,6 +31,9 @@ class GameViewController: UIViewController {
 			NSUserDefaults.standardUserDefaults().setInteger(0, forKey: "highScore")
 			NSUserDefaults.standardUserDefaults().setBool(false, forKey: "reset_data")
 		}
+		
+		print("music = \(music)")
+		print("resetData = \(resetData)")
 		
 		let skView = self.view as! SKView
 		let level = GameMenuScene()

@@ -17,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		if(!NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedBefore")){
+			NSUserDefaults.standardUserDefaults().setBool(true, forKey:"music_preference")
+			NSUserDefaults.standardUserDefaults().setBool(true, forKey: "sfx_preference")
+			NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedBefore")
+		}
+		
 		return true
 	}
 

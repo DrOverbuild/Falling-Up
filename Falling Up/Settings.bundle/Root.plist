@@ -30,7 +30,9 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>Title</key>
-			<string>Reset data next time you open Falling Up</string>
+			<string>Reset data</string>
+			<key>FooterText</key>
+			<string>Resets all data the next time Falling Up is opened.</string>
 		</dict>
 		<dict>
 			<key>Type</key>

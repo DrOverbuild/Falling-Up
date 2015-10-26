@@ -60,20 +60,29 @@ class GameMenuScene: SKScene {
 	}
 	
 	override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-		/* Called when a touch begins */
-		
 		for touch in touches {
-			let location = touch.locationInNode(self)
-			
-			let clickedNode = self.nodeAtPoint(location)
+			let clickedNode = self.nodeAtPoint(touch.locationInNode(self))
 			if clickedNode == playButton{
-				// Open InGameScene
-				playSoundEffect("score.wav")
-				moveToScene(InGameScene())
+				playButton.texture = SKTexture(imageNamed: "playButtonHighlighted")
 			}
 			
 			if clickedNode == optionsButton{
+				optionsButton.texture = SKTexture(imageNamed: "optionsButtonHighlighted")
+			}
+		}
+	}
+	
+	override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+		for touch in touches {
+			let clickedNode = self.nodeAtPoint(touch.locationInNode(self))
+			if clickedNode == playButton{
+				playSoundEffect("score.wav")
+				moveToScene(InGameScene())
+			}else if clickedNode == optionsButton{
 				// Open OptionsScene
+			}else {
+				playButton.texture = SKTexture(imageNamed: "playButton")
+				optionsButton.texture = SKTexture(imageNamed: "optionsButton")
 			}
 		}
 	}
