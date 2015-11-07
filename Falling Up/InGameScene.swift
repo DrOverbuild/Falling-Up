@@ -30,6 +30,7 @@ class InGameScene: SKScene {
 	var direction: CGFloat = -1
 	var bars: [Bar] = []
 	var distanceFromLastBar: CGFloat = 0
+	var invincibility = false
 	//var speedMultiplier: CGFloat = 1
 	var gameOver = false
 	var userIsTouching = false
@@ -178,10 +179,12 @@ class InGameScene: SKScene {
 				BALL_SPEED -= BALL_ACCELERATION
 			}
 		}
+		
+		ball.position.x = minX() + 100
 	}
 	
 	func checkForCollision(){
-		if ball.physicsBody!.allContactedBodies().count > 0{
+		if ball.physicsBody!.allContactedBodies().count > 0 && !invincibility{
 			gameOver = true
 			playSoundEffect("death.wav")
 			addChild(gameOverLabel)
