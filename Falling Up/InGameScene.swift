@@ -16,6 +16,7 @@ class InGameScene: SKScene {
 	let BALL_RADIUS: CGFloat = 25
 	let BALL_ACCELERATION: CGFloat = 1
 	let BAR_ACCELERATION: CGFloat = 0.004
+	let COIN_RARITY: CGFloat = 10
 	
 	var box1: SKShapeNode!
 	var box2: SKShapeNode!
@@ -29,6 +30,7 @@ class InGameScene: SKScene {
 	var highScore = 0
 	var direction: CGFloat = -1
 	var bars: [Bar] = []
+	var coins: [Coin] = []
 	var distanceFromLastBar: CGFloat = 0
 	var invincibility = false
 	//var speedMultiplier: CGFloat = 1
@@ -86,6 +88,7 @@ class InGameScene: SKScene {
 		if !gameOver{
 			updateBars()
 			updateBall()
+			updateCoins()
 			checkForCollision()
 		}
 		updatePositions()
@@ -159,6 +162,45 @@ class InGameScene: SKScene {
 		bars.append(bar)
 		self.addChild(bar)
 		distanceFromLastBar = 0
+	}
+	
+	func updateCoins(){
+		var indexList: [Int] = []
+		for (i, coin) in coins.enumerate(){
+			coin.position.x -= BAR_SPEED
+			
+			if(coin.position.x < minX()-coin.frame.width/2){
+				indexList.append(i)
+				coin.removeFromParent()
+			}
+			
+			if(ball.frame.intersects(coin.frame)){
+				let coinsAmount = NSUserDefaults.standardUserDefaults().integerForKey("coins") + 1
+				NSUserDefaults.standardUserDefaults().setInteger(coinsAmount, forKey: "coins")
+				indexList.append(i)
+				let fadeOut = SKAction.fadeOutWithDuration(0.5)
+				coin.runAction(fadeOut, completion: coin.removeFromParent)
+			}
+		}
+		
+		for index in indexList{
+			
+			coins.removeAtIndex(index)
+		}
+		
+		let random1 = CGFloat(arc4random() % 1001)
+		if(random1 < COIN_RARITY){
+			addCoin()
+		}
+	}
+	
+	func addCoin(){
+		print("addCoin()")
+		let coin = Coin.newCoin()
+		coin.position.x = maxX()+coin.frame.width/2
+		coin.position.y = (CGFloat(arc4random()) % (self.frame.height - box1.frame.height-box2.frame.height-coin.frame.height)) + box2.frame.height + coin.frame.height/2
+		addChild(coin)
+		coins.append(coin)
 	}
 	
 	func updateBall(){

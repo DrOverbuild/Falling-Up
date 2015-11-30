@@ -13,6 +13,7 @@ class GameMenuScene: SKScene {
 	let playButton = SKSpriteNode(imageNamed: "playButton")
 	let optionsButton = SKSpriteNode(imageNamed: "optionsButton")
 	let highScoreLabel = SKLabelNode(fontNamed: "Arial Black")
+	let coinsLabel = SKLabelNode(fontNamed:"Arial Black")
 	
 	override func didMoveToView(view: SKView) {
 		self.backgroundColor = UIColor.whiteColor()
@@ -32,6 +33,13 @@ class GameMenuScene: SKScene {
 //		optionsButton.position = CGPoint(x: midX(), y: midY()-optionsButton.frame.height/2-5)
 //		optionsButton.setScale(0.5)
 //		self.addChild(optionsButton)
+		
+		let coins = NSUserDefaults.standardUserDefaults().integerForKey("coins")
+		coinsLabel.text = "Coins: \(coins)"
+		coinsLabel.fontColor = UIColor.blackColor()
+		coinsLabel.fontSize = 30
+		coinsLabel.position = CGPoint(x: minX()+coinsLabel.frame.width/2+20, y: minY()+20)
+		self.addChild(coinsLabel)
 		
 		let highScore = NSUserDefaults.standardUserDefaults().integerForKey("highScore")
 		highScoreLabel.text = "High Score: \(highScore)"
@@ -55,6 +63,8 @@ class GameMenuScene: SKScene {
 		playButton.position = CGPoint(x: midX(), y: midY()/*+playButton.frame.height/2+5*/)
 
 		//optionsButton.position = CGPoint(x: midX(), y: midY()-optionsButton.frame.height/2-5)
+		
+		coinsLabel.position = CGPoint(x: minX()+coinsLabel.frame.width/2+20, y: minY()+20)
 		
 		highScoreLabel.position = CGPoint(x: maxX()-highScoreLabel.frame.width/2-20, y: minY()+20)
 	}

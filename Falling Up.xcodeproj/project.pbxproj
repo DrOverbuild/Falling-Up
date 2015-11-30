@@ -14,17 +14,18 @@
 		A4B847DD1BBEE5EA00534975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B847DC1BBEE5EA00534975 /* Assets.xcassets */; };
 		A4B847E01BBEE5EA00534975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B847DE1BBEE5EA00534975 /* LaunchScreen.storyboard */; };
 		A4B847EB1BBEE5EA00534975 /* Falling_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847EA1BBEE5EA00534975 /* Falling_UpUITests.swift */; };
-		A4B847F91BBEE7DB00534975 /* GameMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847F51BBEE7DB00534975 /* GameMenuScene.swift */; settings = {ASSET_TAGS = (); }; };
-		A4B847FA1BBEE7DB00534975 /* InGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847F61BBEE7DB00534975 /* InGameScene.swift */; settings = {ASSET_TAGS = (); }; };
-		A4B847FC1BBEE7DB00534975 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847F81BBEE7DB00534975 /* Util.swift */; settings = {ASSET_TAGS = (); }; };
-		A4B847FE1BBEEC5900534975 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B847FD1BBEEC5900534975 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
-		A4C344E81BC32FCB0048F3D2 /* score2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4C344E51BC32FCB0048F3D2 /* score2.wav */; settings = {ASSET_TAGS = (); }; };
-		A4C344E91BC32FCB0048F3D2 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4C344E61BC32FCB0048F3D2 /* death.wav */; settings = {ASSET_TAGS = (); }; };
-		A4C344EA1BC32FCB0048F3D2 /* buttonPress.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4C344E71BC32FCB0048F3D2 /* buttonPress.wav */; settings = {ASSET_TAGS = (); }; };
-		A4C344EC1BC377E50048F3D2 /* score.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4C344EB1BC377E50048F3D2 /* score.wav */; settings = {ASSET_TAGS = (); }; };
-		A4C344EE1BC379450048F3D2 /* Contemplation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C344ED1BC379450048F3D2 /* Contemplation.mp3 */; settings = {ASSET_TAGS = (); }; };
-		A4C344F01BC4AB360048F3D2 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C344EF1BC4AB360048F3D2 /* music.mp3 */; settings = {ASSET_TAGS = (); }; };
-		A4C344F21BC596410048F3D2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4C344F11BC596400048F3D2 /* Settings.bundle */; settings = {ASSET_TAGS = (); }; };
+		A4B847F91BBEE7DB00534975 /* GameMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847F51BBEE7DB00534975 /* GameMenuScene.swift */; };
+		A4B847FA1BBEE7DB00534975 /* InGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847F61BBEE7DB00534975 /* InGameScene.swift */; };
+		A4B847FC1BBEE7DB00534975 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B847F81BBEE7DB00534975 /* Util.swift */; };
+		A4B847FE1BBEEC5900534975 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B847FD1BBEEC5900534975 /* Images.xcassets */; };
+		A4C344E81BC32FCB0048F3D2 /* score2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4C344E51BC32FCB0048F3D2 /* score2.wav */; };
+		A4C344E91BC32FCB0048F3D2 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4C344E61BC32FCB0048F3D2 /* death.wav */; };
+		A4C344EA1BC32FCB0048F3D2 /* buttonPress.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4C344E71BC32FCB0048F3D2 /* buttonPress.wav */; };
+		A4C344EC1BC377E50048F3D2 /* score.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4C344EB1BC377E50048F3D2 /* score.wav */; };
+		A4C344EE1BC379450048F3D2 /* Contemplation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C344ED1BC379450048F3D2 /* Contemplation.mp3 */; };
+		A4C344F01BC4AB360048F3D2 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C344EF1BC4AB360048F3D2 /* music.mp3 */; };
+		A4C344F21BC596410048F3D2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4C344F11BC596400048F3D2 /* Settings.bundle */; };
+		A4C74B6F1C0D014D00C8F898 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C74B6E1C0D014D00C8F898 /* Coin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		A4C344ED1BC379450048F3D2 /* Contemplation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Contemplation.mp3; sourceTree = "<group>"; };
 		A4C344EF1BC4AB360048F3D2 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		A4C344F11BC596400048F3D2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		A4C74B6E1C0D014D00C8F898 /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				A4B847D11BBEE5E900534975 /* AppDelegate.swift */,
 				A4B847D51BBEE5E900534975 /* GameScene.swift */,
 				A4B847D71BBEE5E900534975 /* GameViewController.swift */,
+				A4C74B6E1C0D014D00C8F898 /* Coin.swift */,
 				A4B847D91BBEE5EA00534975 /* Main.storyboard */,
 				A4B847FD1BBEEC5900534975 /* Images.xcassets */,
 				A4B847DC1BBEE5EA00534975 /* Assets.xcassets */,
@@ -256,6 +259,7 @@
 				A4B847FC1BBEE7DB00534975 /* Util.swift in Sources */,
 				A4B847D21BBEE5E900534975 /* AppDelegate.swift in Sources */,
 				A4B847F91BBEE7DB00534975 /* GameMenuScene.swift in Sources */,
+				A4C74B6F1C0D014D00C8F898 /* Coin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
